@@ -1,0 +1,112 @@
+/* card title css  */
+.card-title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    /* margin-right: 30rem; */
+    align-items: center;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,Liberation Sans,
+    sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+   
+}
+#Light .card-title{
+    color: black;
+}
+
+#Dark .card-title{
+    color: white;
+}
+/* title -Your css */
+ .Your{
+    /* padding-right: rem; */
+    padding-top: 2rem;
+    padding-right: 20rem;
+    font-size: 9rem;
+    margin-top: -80px;
+ }
+
+/* title -Journey css */
+.Journey{
+    padding-left: 18rem;
+    font-size: 9rem;
+    margin-top: -80px;
+}
+/* cards container css */
+.Cards{
+    margin-left: 225px;
+    margin-right: 228px;
+}
+/* top 2 cards css */
+.TopJourneyCards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -60px;
+    margin-bottom: -1150px;
+    padding-left: 30px;
+
+}
+/* bottom 2 cards css */
+.BottomJourneycards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -450px;
+
+    /* margin-left: -650px; */
+}
+/* Responsive css for 800px screen */
+@media screen and (max-width: 800px){
+    .Cards{
+     width: 100%;
+     margin-left: -100px;
+
+    }
+    .BottomJourneycards{
+        width: 100%;
+        margin-top: -12rem;
+        margin-left: -1rem;
+    }
+    .Your{
+        font-size: 8rem;
+    }
+    .Journey{
+        font-size: 7rem;
+        margin-left: -19px;
+    }
+}  
+/* Responsive css for 360px screen */
+@media screen and (max-width: 360px){
+    /* .card-title{
+        width: 100%;
+    } */
+     .Cards{
+     width: 100%;
+     margin-top: -30rem;
+
+    }
+    .TopJourneyCards{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .BottomJourneycards{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin-top: 12.5rem;
+    }
+    .Your{
+        font-size: 6rem;
+        padding-left: 18rem;
+        margin-top: 0.5rem;
+        padding: 0rem;
+    }
+    .Journey{
+        font-size: 5.5rem;
+        margin-left: -17rem;
+        margin-top: 0.1px;
+    }
+}  

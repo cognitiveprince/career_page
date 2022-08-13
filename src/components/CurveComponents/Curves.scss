@@ -1,0 +1,55 @@
+// css of curve container
+.curve-container{
+    padding: 11rem;
+    position: relative;
+    z-index: 5;
+}
+// css of curve that connects ML engineer and electronic engineer cards
+.ML-Electronic_Curve{
+    margin-left: -555px;
+    padding-left: 57rem;
+}
+
+// css of curve that connects electronic engineer and IOS developer cards
+.ElectronicIos_Curve{
+   margin-left: -320px;
+}
+// Responsive css for 800px screen
+@media screen and (max-width: 800px){
+    .curve-container{
+        width: 100%;
+        margin: 0;
+        padding: 1rem;
+    }
+    .ElectronicIos_Curve svg{
+      width: 0;
+      margin: 0px;
+    }
+    .ML-Electronic_Curve svg{
+        width: 0;
+        margin: 0px;
+        padding: 0;
+    }
+    .Soft-ML_Curve svg{
+        width: 0;
+    }
+} 
+// Responsive css for 360px screen
+@media screen and (max-width: 360px){
+    .curve-container{
+        margin: 0;
+        padding: 0;
+    }
+    .ElectronicIos_Curve {
+      width: 0;
+      margin: 0px;
+    }
+    .ML-Electronic_Curve {
+        width: 0;
+        margin: 0px;
+        padding: 0;
+    }
+    .Soft-ML_Curve {
+        width: 0;
+    }
+} 

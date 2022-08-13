@@ -1,0 +1,140 @@
+/* Main container  */
+.MLCard-container{
+    width: 27rem;
+    height: 31.5rem;
+    margin-left: -320px;
+    margin-right: 0;
+    /* margin: 5rem; */
+    /* border: 0.1rem solid grey; */
+    border: 5px solid whitesmoke;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgb(249, 246, 246);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 15rem;
+    border: 0;
+  
+      /* transform: rotate(-0.1deg); */
+  }
+  // Theme css for main container
+  #Light .MLCard-container{
+    background-color: white;
+    border: 5px solid whitesmoke;
+    box-shadow: 0px 4px 4px rgb(249, 246, 246);
+  }
+  
+  #Dark .MLCard-container{
+    background-color: rgb(54, 52, 52);
+    box-shadow: 0px 4px 4px rgb(56, 52, 52);
+  }
+ // Theme css for Points of card
+  #Light .MLPoints{
+    color: black;
+  }
+
+  #Dark .MLPoints{
+    color: white;
+  }
+   // Theme css for Title of card
+  #Light .MLcard-title{
+    color: black;
+  }
+
+  #Dark .MLcard-title{
+    color: white;
+  }
+  /* points list */
+  ul {
+      list-style: none;
+    }
+
+ /* Bullet design */
+.MLPoints li::before {
+    content: "\2022";
+    font-size: 30px;
+    color: #F27405;
+}
+  // span css
+  li span {
+      position: relative;
+      left: 1em;
+    }
+  // card title css
+  .MLcard-title{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  // card question title css
+  .MLQuestion-title{
+    font-size: 15px;
+    /* padding: 1rem 1rem 1rem 1rem; */
+    width: 24rem;
+    height: 2rem;
+    /* border: 0.1rem solid grey; */
+    border: 5px solid #F27405;
+    background-color: #F27405;
+    color: whitesmoke;
+    border-radius: 25px;
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+  }
+   // card qualitifcation title css
+  .Qualifications{
+    font-size: 18px;
+    color: rgb(164, 162, 162);
+    font-weight: bold;
+    padding-top: 1rem;
+  }
+   // card button css
+  .MLApply_button{
+    width: 20rem;
+    border-radius: 25px;
+    height: 2.5rem;
+    margin-top: 1rem;
+    background-color: #F27405;
+    border: 0ch;
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  // Media queries
+  // Responsive css for 800px screen
+  @media screen and (max-width: 800px){
+    .MLCard-container{
+      box-shadow: none;
+      background-color: unset;
+      margin-left: -10px;
+      width: 23.2rem;
+      height: 29rem;
+      margin-left: 11rem;
+    }
+      .MLQuestion-title{
+        width: 23rem;
+      }
+      .MLApply_button{
+        width: 13rem;
+      }
+      .MLPoints{
+        font-size: 14px;
+      }
+    }
+    // Responsive css for 360px screen
+    @media screen and (max-width: 360px){
+      .MLCard-container{
+        box-shadow: none;
+        background-color: unset;
+        margin: 60rem 0rem 0rem -9.8rem;
+      }
+      .MLQuestion-title{
+        width: 21rem;
+        font-size: 12.5px;
+      }
+      }
+
+

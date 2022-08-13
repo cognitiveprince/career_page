@@ -1,0 +1,70 @@
+/* whole image container */
+.Img-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -50px;
+}
+
+/* hand image */
+.topimage{
+    /* width: 100%;
+    height: 50rem;
+    padding-left: 5rem;
+    margin-top: -100px; */
+    margin-left: 40px;
+    margin-top: -150px;
+    width: 900px;
+    vertical-align: middle;
+   
+}
+/* legs image */
+.bottomimage{
+    width: 100%;
+    height: 100%;
+    
+}
+/* Responsive css for 800px screen */
+@media screen and (max-width: 800px){
+    .Img-container{
+        width: 100%;
+    }
+    .topimage{
+       width: 35rem;
+       height: 100%;
+       /* margin-left: -50rem; */
+       
+    }
+    .bottomimg-container{
+        width: 100%;
+    }  
+    
+    .bottomimage{
+    width: 100%;
+    height: 100%;
+    }
+  }
+  /* Responsive css for 360px screen */
+  @media screen and (max-width: 360px){
+    .Img-container{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .TopImg-container{
+        padding: 0;
+        margin: 0;
+    }
+    .topimage{
+        width: 15rem;
+       height: 100%;
+       margin-left: 0rem;
+       /* margin-right: 1rem; */
+       
+    }
+    .bottomimage{
+    width: 100%;
+    height: 100%;
+    }
+  }

@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=PT+Sans&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+html, body, #root{
+    width: 100%;
+    height: 100%;
+}
+
+// css for app container
+.app-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    // justify-content: center space-between;
+    align-items: center;
+    flex-direction: column;
+  
+}
+// theme css for whole screen
+#Light{
+    background-color: white;
+}
+
+#Dark{
+    background-color: black;
+}
+// theme css for whole app container
+#Light .app-container{
+    background-color: white;
+}
+
+#Dark .app-container{
+    background-color: black;
+}
+// css for top section
+.top-section{
+    flex: 0 0 50%;
+    padding: 1rem;  
+}
+// css of bottom section
+.bottom-section{
+    flex: 0 0 50%;
+    border: none;
+}
+// css for switch
+.switch{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+// theme css for label of switch
+label{
+    padding: 0.5rem;
+    font-weight: 500;
+}
+//  theme css for switch
+#Light .switch{
+    background-color: white;
+    color: black;
+}
+
+#Dark .switch{
+    background-color: black;
+    color: white;
+}
+
+// Media queries
+// responsive css of 800px screen
+@media screen and (max-width: 800px){
+    label{
+        padding: 0.2rem;
+        font-weight: 300;
+    }
+    .bottom-section{
+        width: 100%;
+        align-items: center;
+        margin: 0;
+        padding: 0rem;
+        padding-right: 0rem;
+    }
+}
+// responsive css of 360px screen
+@media screen and (max-width: 360px){
+    .top-section{
+        width: 100%;
+
+        padding: 0;
+    }
+    .bottom-section{
+        width: 100%;
+       
+    }
+}

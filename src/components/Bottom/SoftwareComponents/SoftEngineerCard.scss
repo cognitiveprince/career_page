@@ -1,0 +1,140 @@
+/* Main container  */
+.SoftwareCard-container{
+  width: 27rem;
+  height: 32rem;
+  margin: 5rem;
+  margin-right: -190px;
+  /* border: 0.1rem solid grey; */
+  border: 5px solid whitesmoke;
+  border-radius: 25px;
+  display: flex;
+	flex-direction: column;
+	align-items: center;
+  /* position: relative; */
+	box-shadow: 0px 4px 4px rgb(249, 246, 246);
+  font-family: Arial, Helvetica, sans-serif;
+  border: 0;
+
+	/* transform: rotate(-0.1deg); */
+}
+// Theme css for main container
+#Light .SoftwareCard-container{
+  background-color: white;
+  border: 5px solid whitesmoke;
+  box-shadow: 0px 4px 4px rgb(249, 246, 246);
+}
+
+#Dark .SoftwareCard-container{
+  background-color: rgb(54, 52, 52);
+  box-shadow: 0px 4px 4px rgb(56, 52, 52);
+}
+ // Theme css for Points of card
+#Light .SoftwarePoints{
+  color: black;
+}
+
+#Dark .SoftwarePoints{
+  color: white;
+}
+ // Theme css for Title of card
+#Light .Softwarecard-title{
+  color: black;
+}
+
+#Dark .Softwarecard-title{
+  color: white;
+}
+/* points list */
+ul {
+    list-style: none;
+  }
+  
+/* Bullet design */
+.SoftwarePoints li::before {
+    content: "\2022";
+    font-size: 30px;
+    color: #18e36d;
+}
+// span css
+li span {
+    position: relative;
+    left: 1em;
+  }
+// card title css
+.Softwarecard-title{
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  padding: 1rem 1rem 1rem 1rem;
+}
+// card question title css
+.SoftwareQuestion-title{
+  font-size: 15px;
+  /* padding: 1rem 1rem 1rem 1rem; */
+  width: 24rem;
+  height: 2rem;
+  /* border: 0.1rem solid grey; */
+  border: 5px solid #18e36d;
+  background-color: #18e36d;
+  color: whitesmoke;
+  border-radius: 25px;
+  display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+ // card qualitifcation title css
+.Qualifications{
+  font-size: 18px;
+  color: rgb(164, 162, 162);
+  font-weight: bold;
+  padding-top: 1rem;
+}
+ // card button css
+.SoftwareApply_button{
+  width: 20rem;
+  border-radius: 25px;
+  height: 2.5rem;
+  margin-top: 1rem;
+  background-color: #18e36d;
+  border: 0ch;
+  color: whitesmoke;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+// Media queries
+// Responsive css for 800px screen
+@media screen and (max-width: 800px){
+  .SoftwareCard-container{
+    box-shadow: none;
+    background-color: unset;
+    width: 23.5rem;
+    height: 29rem;
+    margin-left: 6rem;
+  }
+  .SoftwareQuestion-title{
+    width: 22.5rem;
+  }
+  .SoftwareApply_button{
+    width: 13rem;
+  }
+  .SoftwarePoints{
+    font-size: 14px;
+  }
+}
+// Responsive css for 360px screen
+@media screen and (max-width: 360px){
+  .SoftwareCard-container{
+    box-shadow: none;
+    background-color: unset;
+    width: 23.5rem;
+    height: 29rem;
+    margin-left: 5rem;
+  }
+  .SoftwareQuestion-title{
+    width: 21rem;
+    font-size: 12.5px;
+  }
+}

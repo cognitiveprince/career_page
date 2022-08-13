@@ -1,0 +1,148 @@
+
+/* Main container  */
+.ElectronicCard-container{
+    width: 27rem;
+    height: 34.5rem;
+    margin: 7.6rem;
+    // margin-top: -60rem;
+    /* border: 0.1rem solid grey; */
+    border: 5px solid whitesmoke;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgb(249, 246, 246);
+    font-family: Arial, Helvetica, sans-serif;
+    border: 0;
+  
+      /* transform: rotate(-0.1deg); */
+  }
+  // Theme css for main container
+  #Light .ElectronicCard-container{
+    background-color: white;
+    border: 5px solid whitesmoke;
+    box-shadow: 0px 4px 4px rgb(249, 246, 246);
+  }
+  
+  #Dark .ElectronicCard-container{
+    background-color: rgb(54, 52, 52);
+    box-shadow: 0px 4px 4px rgb(56, 52, 52);
+  }
+ // Theme css for Points of card
+  #Light .ElectronicPoints{
+    color: black;
+  }
+
+  #Dark .ElectronicPoints{
+    color: white;
+  }
+ // Theme css for title of card
+  #Light .Electroniccard-title{
+    color: black;
+  }
+
+  #Dark .Electroniccard-title{
+    color: white;
+  }
+  /* points list */
+  ul {
+      list-style: none;
+    }
+
+/* Bullet design */
+.ElectronicPoints li::before {
+    content: "\2022";
+    font-size: 30px;
+    color: #665385;
+}
+  
+// span css
+  li span {
+      position: relative;
+      left: 1em;
+    } 
+  
+    // card title css
+  .Electroniccard-title{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  
+  // card question title css
+  .ElectronicQuestion-title{
+    font-size: 15px;
+    /* padding: 1rem 1rem 1rem 1rem; */
+    width: 24rem;
+    height: 3.4rem;
+    /* border: 0.1rem solid grey; */
+    border: 5px solid #665385;
+    background-color: #665385;
+    color: whitesmoke;
+    border-radius: 25px;
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+  }
+  
+  // card qualitifcation title css
+  .ElectronicQualifications{
+    font-size: 18px;
+    color: rgb(164, 162, 162);
+    font-weight: bold;
+    padding-top: 1rem;
+  }
+  
+  // card button css
+  .ElectronicApply_button{
+    width: 20rem;
+    border-radius: 25px;
+    height: 2.5rem;
+    margin-top: 1rem;
+    background-color: #665385;
+    border: 0ch;
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  // Media queries
+  // Responsive css for 800px screen
+@media screen and (max-width: 800px){
+  .ElectronicCard-container{
+    box-shadow: none;
+    background-color: unset;
+    width: 24rem;
+    height: 33rem;
+    margin-left: 8rem;
+  }
+  .ElectronicQuestion-title{
+    width: 23.5rem;
+  }
+  .ElectronicApply_button{
+    width: 13rem;
+  }
+  .ElectronicPoints{
+    font-size: 14px;
+  }
+}
+
+// Responsive css for 360px screen
+@media screen and (max-width: 360px){
+  .ElectronicCard-container{
+    box-shadow: none;
+    background-color: unset;
+    width: 24rem;
+    height: 33rem;
+    margin-left: 7.8rem;
+    margin-top: -35rem;
+    margin-right: 0;
+  }
+  .ElectronicQuestion-title{
+    width: 21rem;
+    height: 3rem;
+    font-size: 12.5px;
+  }
+}

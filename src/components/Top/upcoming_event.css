@@ -1,0 +1,120 @@
+/* css of whole card */
+.Card{
+    background: rgb(255,100,100);
+    background: -moz-linear-gradient(90deg, rgba(255,100,100,1) 0%, rgba(169,0,250,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(255,100,100,1) 0%, rgba(169,0,250,1) 100%);
+    background: linear-gradient(90deg, rgba(255,100,100,1) 0%, rgba(169,0,250,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff6464",endColorstr="#a900fa",GradientType=1);
+    width: 100%;
+    height: 100%;
+    color: whitesmoke;
+    align-items: center;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,Liberation Sans,
+    sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+/* css of card main title */
+.title{
+    /* margin-left: 18rem; */
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 600;
+    padding-top: 6rem;
+    color: whitesmoke;
+}
+/* css of card sub-title */
+.Card-substitle{
+    /* margin-left: 10rem; */
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 350;
+    padding-top: 1rem;
+}
+/* css of inner card */
+.inner-Card{
+    width: 61rem;
+    height: 18rem;
+    display: flex;
+    background-color: rgba(44,36,36,.5);
+    border-radius: 18px;
+    padding-left: 8rem;
+    margin: 3rem 6rem 6rem 16rem;
+    align-items: center;
+    text-align: center;
+}
+/* css of number of inner card */
+.num{
+    font-weight: 300;
+    font-weight: bold;
+    font-size: 8rem;
+    padding-left: 4.5rem;
+}
+/* css of number sub-title of inner card*/
+.num-substitle{
+    font-size: 2rem;
+    padding-left: 7rem; 
+}
+/* media queries */
+
+/* responsive css foe 800px screen */
+@media screen and (max-width: 800px){
+    .Card{
+        width: 100%;
+        height: 33rem;
+    }
+    .title{
+        padding-top: 1rem;
+    }
+    .inner-Card{
+        width: 85%;
+        height: 15rem;
+        margin: 1rem 1rem 1rem 4rem;
+        padding: 1rem 1rem 1rem 1.7rem;
+    }
+    .num{
+        font-size: 5rem;
+        /* padding-left: 2rem; */
+        margin: 0;
+        /* padding-right: 30px; */
+        align-items: center;
+    }
+    .num-substitle{
+        font-size: 1.5rem;
+        padding: 0rem 0rem 0.5rem 4.5rem;
+        align-items: center;
+    }
+  }
+/* responsive css foe 360px screen */
+  @media screen and (max-width: 360px){
+    .Card{
+        width: 100%;
+        height: 16rem;
+        align-self: center;
+        padding: 0;
+        margin: 0;
+    }
+    .title{
+        font-size: 2.5rem;
+        margin-top: -1rem;
+    }
+    .Card-substitle{
+        padding-left: 1rem;
+        margin-top: -1rem;
+        font-size: 1.5rem;
+    }
+    .inner-Card{
+        width: 75%;
+        height: 8rem;
+        margin: 1rem 1rem 1rem 3rem;
+        padding: 1rem 0rem 1rem 1rem;
+    }
+    .num{
+        font-size: 3rem;
+        padding: 0rem 0.8rem 0rem 0.5rem;
+        align-items: center;
+    }
+    .num-substitle{
+        font-size: 1rem;
+        padding: 0rem 0rem 0.5rem 0rem;
+        align-items: center;
+    }
+  }

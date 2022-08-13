@@ -1,0 +1,139 @@
+/* whole footer section css */
+.footerSection{
+	background-color:#242424;
+    /* height: 100%; */
+    width: 100%;
+	padding-left: 17rem;
+}
+ /* footer row css */
+.footer-row{
+    display: flex;
+    flex-direction: row;
+	height: 25rem;
+}
+/* footer column css */
+.footer-col{
+   padding: 3.5rem 3rem;
+   margin: 1rem;
+}
+/* footer title css */
+.footer-col h4{
+	font-size: 23px;
+	color: whitesmoke;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+/* this gives a green line below the headiings of the footer */
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: whitesmoke;
+	height: 3px;
+	box-sizing: border-box;
+	width: 50px;
+}
+/* css of the rcolumns under footer title */
+.footer-col ul{
+    padding-left: 0px;
+}
+/* css of the element under title */
+.footer-col ul li a{
+	font-size: 19px;
+	text-transform: capitalize;
+	text-decoration: none;
+	font-weight: 600;
+	color: rgb(161, 153, 153);
+	display: block;
+	transition: all 0.3s ease;
+}
+
+/* css of social media icon */
+.footer-col .socialmedia-icons ul li a{
+	color: whitesmoke;
+}
+/* css of the hover effect of social media icons */
+.footer-col .socialmedia-icons ul li a:hover{
+	color: #5856d6;
+	transform: scale(1.3);	
+}
+/* hover effect on items on footer */
+.footer-col ul li a:hover{
+	color: whitesmoke;
+}
+/* padding of each social media icons */
+.socialmedia-icons li{
+   padding: 0.5rem;
+}
+/* css of social media icon for alignment */
+.socialmedia-icons ul{
+    display: flex;
+    flex-direction: row;
+}
+/* Media queries */
+/* Responsive css for 800px screen */
+@media screen and (max-width: 800px){
+    .footerSection{
+        width: 100%;
+		padding-left: 4rem;
+		margin: 0;
+    }
+	.footer-col{
+		padding: 3.5rem 0rem;
+
+	}
+	.footer-row{
+		height: 20rem;
+		margin-left: -2em;
+	}
+}
+/* Responsive css for 360px screen */
+@media screen and (max-width: 360px){
+    .footerSection{
+        width: 100%;
+    }
+	.footer-col{
+		padding: 3rem 0rem;
+	}
+	.footer-row{
+		height: 28rem;
+	}
+	.footer-col h4{
+		font-size: 18px;
+		/* padding-right: 2.5rem; */
+	}
+	.footer-col ul li a{
+		font-size: 14px;
+	}
+	.Information{
+		margin-left: 3rem;
+	}
+	.Company{
+		margin-top: 11rem;
+		margin-left: -17.5rem;
+	}
+	.socialmedia-icons{
+		margin-top: 11rem;
+		margin-left: -10rem;
+	}
+	.socialmedia-icons ul{
+		display: flex;
+		flex-direction: row;
+		margin: 0;
+		padding: 0;
+	}
+	#insta-icon{
+		display: flex;
+		flex-direction: row;
+		margin-top: 2.5rem;
+		margin-left:-5.5rem;
+	}
+	#LinkedIn-icon{
+		display: flex;
+		flex-direction: row;
+		margin-top: 2.5rem;
+	}
+}

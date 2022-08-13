@@ -1,0 +1,139 @@
+
+/* Main container  */
+.IOSCard-container{
+    width: 27rem;
+    height: 25rem;
+    margin-left: -400px;
+    /* margin: 5rem; */
+    /* border: 0.1rem solid grey; */
+    border: 5px solid whitesmoke;
+    border-radius: 25px;
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 0px 4px 4px rgb(249, 246, 246);
+    font-family: Arial, Helvetica, sans-serif;
+    border: 0;
+  
+      /* transform: rotate(-0.1deg); */
+  }
+  // Theme css for main container
+  #Light .IOSCard-container{
+    background-color: white;
+    border: 5px solid whitesmoke;
+    box-shadow: 0px 4px 4px rgb(249, 246, 246);
+  }
+  
+  #Dark .IOSCard-container{
+    background-color: rgb(54, 52, 52);
+    box-shadow: 0px 4px 4px rgb(56, 52, 52);
+  }
+  // Theme css for Points of card
+  #Light .IOSPoints{
+    color: black;
+  }
+
+  #Dark .IOSPoints{
+    color: white;
+  }
+ // Theme css for Title of card
+  #Light .IOScard-title{
+    color: black;
+  }
+
+  #Dark .IOScard-title{
+    color: white;
+  }
+  /* points list */
+  ul {
+      list-style: none;
+    }
+    
+/* Bullet design */
+.IOSPoints li::before {
+    content: "\2022";
+    font-size: 30px;
+    color: #D9A404;
+}
+// span css
+ li span {
+      position: relative;
+      left: 1em;
+    }
+  // card title css
+  .IOScard-title{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  // card question title css
+  .IOSQuestion-title{
+    font-size: 15px;
+    /* padding: 1rem 1rem 1rem 1rem; */
+    width: 24rem;
+    height: 2rem;
+    /* border: 0.1rem solid grey; */
+    border: 5px solid #D9A404;
+    background-color: #D9A404;
+    color: whitesmoke;
+    border-radius: 25px;
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+  }
+   // card qualitifcation title css
+  .Qualifications{
+    font-size: 18px;
+    color: rgb(164, 162, 162);
+    font-weight: bold;
+    padding-top: 1rem;
+  }
+   // card button css
+  .IOSApply_button{
+    width: 20rem;
+    border-radius: 25px;
+    height: 2.5rem;
+    margin-top: 1rem;
+    background-color: #D9A404;
+    border: 0ch;
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+// Media queries
+// Responsive css for 800px screen
+@media screen and (max-width: 800px){
+  .IOSCard-container{
+    box-shadow: none;
+    background-color: unset;
+    width: 23.5rem;
+    height: 23rem;
+    margin-left: -8.4rem;
+  }
+  .IOSQuestion-title{
+    width: 22.9rem;
+  }
+  .IOSApply_button{
+    width: 13rem;
+  }
+  .IOSPoints{
+    font-size: 14px;
+  }
+}
+// Responsive css for 360px screen
+@media screen and (max-width: 360px){
+  .IOSCard-container{
+    box-shadow: none;
+    background-color: unset;
+    width: 23rem;
+    height: 23rem;
+    margin: 20rem 0rem 4rem -21rem;
+  }
+  .IOSQuestion-title{
+    width: 20rem;
+    font-size: 12.5px;
+  }
+}
