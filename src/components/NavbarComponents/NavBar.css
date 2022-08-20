@@ -52,18 +52,23 @@
 @media screen and (max-width: 800px){
     .navbar{
         width: 10%;
-        margin-bottom: 21rem;
-        margin-right: 90%;
-        font-size: 12px;
-        margin-left: -1.5rem;
+        margin-bottom: 15rem;
+        font-size: 14px;
+        margin-left: 45rem;
+        font-weight: 600;
     }
     .navbar-nav{
-        background-color: rgb(73, 70, 70);
+        background-color: rgb(241, 237, 237);
         width: 18rem;
         border-radius: 25px;
+        display: flex;
+        margin: -15rem 1rem 0rem -30rem;
     }
     .navbar-nav a{
         padding: 0;
+    }
+    .nav-link {
+        color: rgb(27, 27, 175)!important;
     }
     .nav-image{
         width: 35px;
@@ -74,20 +79,22 @@
 /* Responsive css for 360px screen */
 @media screen and (max-width: 360px){
     .navbar{
-        width: 20%;
+        width: 19%;
         height: 10%;
-        margin-bottom: 30rem;
-        margin-right: 90%;
-        font-size: 10px;
-
+        margin-bottom: 24.3rem;
+        font-size: 12px;
+        font-weight: 500;
+        margin-left: 18.5rem;
     }
     .navbar-nav{
-        background-color: rgb(73, 70, 70);
-        width: 15rem;
+        background-color: white;
+        width: 12rem;
         text-align: center;
         border-radius: 25px;
         padding: 0;
         position: relative;
+        display: flex;
+        margin: -8rem 1rem 0rem -14rem;
     }
     .navbar-nav a{
         padding: 0;

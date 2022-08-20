@@ -4,8 +4,19 @@ import "./NavBar.css";
 import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../../../node_modules/bootstrap/dist/js/bootstrap.min.js";
 
-class NavBar extends Component {
-  render() {
+
+function NavBar () {
+
+    var [toggle, settoggle] = React.useState(0.5);
+
+    function makeBlur() {
+      if (toggle == 0.5) {
+        settoggle(1);
+      } else {
+        settoggle(0.5);
+      }
+      document.body.style.opacity = toggle;
+    }
     return (
       <div className="m-4">
         {/* navbar starts */}
@@ -13,6 +24,7 @@ class NavBar extends Component {
           <div className="container-fluid">
             {/* for the menu button */}
             <button
+              onClick={makeBlur}
               className="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
@@ -61,6 +73,5 @@ class NavBar extends Component {
       </div>
     );
   }
-}
 
 export default NavBar;
